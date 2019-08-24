@@ -1,130 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <title>A new era begins with YOU.</title>
 
-    <title>{{ or $.page.title "Above-Average Friendships, LLC" }}</title>
-    <style>
-        body {
-            margin:  0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-        }
+    <link rel="stylesheet" href="/assets/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="/assets/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/clippy.css" type="text/css">
+    <link rel="stylesheet" href="/assets/win9x.scss" type="text/css">
+    <link rel="stylesheet" href="/assets/standalone.scss" type="text/css">
 
-        header {
-            height:     74px;
-            position:   relative;
-            color:      #7F94FF;
-        }
+    <script
+        src="/assets/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"
+    ></script>
 
-        header > .header-1 {
-            background: transparent top left repeat-x url('/assets/img/header_03.png');
-            position:   absolute;
-            top:        -46px;
-            left:       0;
-            right:      0;
-            height:     76px;
-            z-index:    100;
-        }
+    <script
+        src="/assets/jquery-ui.min.js"
+        integrity="sha256-KM512VNnjElC30ehFwehXjx1YCHPiQkOPmqnrWtpccM="
+        crossorigin="anonymous"
+    ></script>
 
-        header > .header-2 {
-            background: transparent top left no-repeat url('/assets/img/header_04.png');
-            position:   absolute;
-            top:        0;
-            left:       0;
-            right:      0;
-            height:     30px;
-            z-index:    100;
-        }
+    <script
+        src="/assets/jquery.cookie.js"
+        integrity="sha256-jAMBs9ulBhYy1zIc2Lt71Sf0gojVyxX/YU6gwdzBrWk="
+        crossorigin="anonymous"
+    ></script>
 
-        header > .header-3 {
-            background: transparent top left no-repeat url('/assets/img/header_05.png');
-            position:   absolute;
-            top:        30px;
-            left:       0;
-            right:      0;
-            height:     44px;
-            z-index:    100;
-        }
+    <script
+        src="/assets/moment.js"
+        integrity="sha384-Z9rov0QZQoXJqe/hrdm93ID90tM8OLFUXcIsBnQosgHNQ6wBRqdH+DoIrUkBbxH5"
+        crossorigin="anonymous"
+    ></script>
 
-        header > .title {
-            position:   absolute;
-            top:        0;
-            left:       340px;
-            right:      0;
-            height:     30px;
-            z-index:    1000;
-            margin-top: 6px;
-        }
+    <script
+        src="/assets/buzz.min.js"
+        integrity="sha256-HNgpH2tUStjWEAyj9ceHG+2WQdu5Oh1V6NzjG/HF0vo="
+        crossorigin="anonymous"
+    ></script>
 
-        header > .title > h1 {
-            margin-bottom: 0px;
-            color:         #3f4a7f;
-        }
+    <script
+        src="/assets/mousetrap.min.js"
+        integrity="sha256-fHzjsajIgwWDvn3rf3b1IxdXX4PoIml763//KcQaA44="
+        crossorigin="anonymous"
+    ></script>
 
-        header > .title > h2 {
-            margin-top: 0px;
-        }
+    <script
+        src="/assets/webamp.bundle.min.js"
+        integrity="sha384-iKnTLQLVvAAf5EQ7px1ELf2KOZhSevFKWfKnyaP2S4QWWuC/ncsGUXXes8k3UOoY"
+        crossorigin="anonymous"
+    ></script>
 
-        body > nav {
-            position: absolute;
-            top:      96px;
-            left:     0;
-            bottom:   0;
-            width:    340px;
-        }
-
-        nav ul {
-            padding: 0;
-        }
-
-        nav ul > li {
-            background:      #7FDCFF;
-            list-style-type: none;
-            height:          32px;
-            border-bottom:   2px solid #7F94FF;
-            padding:         8px;
-            padding-top:     16px;
-            padding-bottom:  0px;
-        }
-
-        nav ul > li a {
-            text-decoration: none;
-            color:           #3f4a7f;
-            font-size:       18px;
-            font-weight:     bold;
-        }
-
-        nav ul > li:hover {
-            background:      #3f4a7f;
-        }
-
-        nav ul > li:hover a {
-            color:           white;
-        }
-    </style>
+    <script src="/assets/win9x.js"></script>
+    <script src="/assets/clippy.js"></script>
 </head>
 <body>
-    <header>
-        <div class="header-1">&nbsp;</div>
-        <div class="header-2">&nbsp;</div>
-        <div class="header-3">&nbsp;</div>
-        <div class="title">
-            <h1>Above-Average Friendships</h1>
-            <h2>Web Design, Consulting, &amp; Custom Programming</h2>
-        </div>
-    </header>
-
-    <nav>
-        <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/services.html">Services</a></li>
-            <li><a href="/internet.html">Internet Access</a></li>
-            <li><a href="/about.html">About Us</a></li>
-        </ul>
-    </nav>
-
-	{{ template "content" . }}
+    {{ template "content" . }}
 </body>
 </html>

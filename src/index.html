@@ -1,0 +1,86 @@
+<div id="desktop" class="icon-container">
+    {{ range $icon := $.page.desktop.icons }}
+    <a href="{{ $icon.href }}" data-window-unmanaged="{{ b $icon.unmanaged }}">
+        <i class="ico-32 ico-{{ $icon.icon }}"></i>
+        <span>{{ $icon.label }}</span>
+    </a>
+    {{ end }}
+</div>
+
+<footer id="taskbar">
+    <button class="btn btn-start">Start</button>
+    <hr />
+    <div class="w9x-toolbar-handle"></div>
+
+    <div class="system-tray">
+        <time data-format="h:mm A"></time>
+    </div>
+</footer>
+
+<div id="start" class="pure-menu pure-menu-vertical">
+    <ul class="pure-menu-list">
+        {{ range $item := $.page.start.shortcuts }}
+        <li class="pure-menu-item">
+            <a
+                class="pure-menu-link"
+                {{ if $item.title }}
+                title="{{ $item.title }}"
+                {{ end }}
+                {{ if $item.error }}
+                onclick="window.app.error('{{ or $item.error.title `Error` }}', '{{ $item.error.message }}')"
+                {{ else if $item.href }}
+                href="{{ $item.href }}"
+                {{ end }}
+            >
+                <i class="ico-24 ico-{{ $item.icon }}"></i>
+                {{ $item.label }}
+            </a>
+        </li>
+        {{ end }}
+
+        {{ range $item := $.page.start.main }}
+        {{   if $item.separator }}
+        <li class="separator"></li>
+        {{   else }}
+        <li class="pure-menu-item{{ if $item.submenu }} pure-menu-has-children pure-menu-allow-hover{{ end }}">
+            <a
+                class="pure-menu-link"
+                {{ if $item.title }}
+                title="{{ $item.title }}"
+                {{ end }}
+                {{ if $item.error }}
+                onclick="window.app.error('{{ or $item.error.title `Error` }}', '{{ $item.error.message }}')"
+                {{ else if $item.href }}
+                href="{{ $item.href }}"
+                {{ end }}
+            >
+                <i class="ico-32 ico-{{ $item.icon }}"></i>
+                {{ $item.label }}
+            </a>
+            {{ if $item.submenu }}
+            <ul class="pure-menu-children">
+            {{ range $subitem := sliceify (get $.page.start $item.submenu) }}
+                <li class="pure-menu-item">
+                    <a
+                        class="pure-menu-link"
+                        {{ if $subitem.title }}
+                        title="{{ $item.title }}"
+                        {{ end }}
+                        {{ if $subitem.error }}
+                        onclick="window.app.error('{{ or $subitem.error.title `Error` }}', '{{ $subitem.error.message }}')"
+                        {{ else if $subitem.href }}
+                        href="{{ $subitem.href }}"
+                        {{ end }}
+                    >
+                        <i class="ico-16 ico-{{ $subitem.icon }}"></i>
+                        {{ $subitem.label }}
+                    </a>
+                </li>
+            {{ end }}
+            </ul>
+            {{ end }}
+        </li>
+        {{   end }}
+        {{ end }}
+    </ul>
+</div>

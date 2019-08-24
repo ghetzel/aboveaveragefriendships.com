@@ -1,0 +1,29 @@
+<div id="winamp-container"></div>
+<script type="text/javascript">
+$(function(){
+    // Or, if you installed via a script tag, `Winamp` is available on the global `window`:
+    // const Winamp = window.Webamp;
+
+    // Check if Winamp is supported in this browser
+    if(!Webamp.browserIsSupported()) {
+        window.app.error("Error", "Winamp is not supported in this browser...errm, I mean..operating system.");
+    }
+
+    const webamp = new Webamp({
+        initialTracks: [{
+            url: "/assets/sounds/winamp-llama.mp3",
+            metaData: {
+                artist: "DJ Mike Llama",
+                title: "Llama Whippin' Intro",
+            },
+        }],
+        initialSkin: {
+            url: "/assets/misc/base-2.91.wsz",
+        },
+        zIndex: ++window.topZ,
+    });
+
+    // Render after the skin has loaded.
+    webamp.renderWhenReady(document.getElementById('winamp-container'));
+});
+</script>

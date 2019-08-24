@@ -1,0 +1,598 @@
+ACCESS_110 accessibility
+ACCESS_218 accessibility-filter-keys
+ACCESS_219 accessibility-colors
+ACCESS_220 accessibility-high-contrast
+ACCESS_221 accessibility-shortcut
+ACCESS_222 accessibility-mouse-keys
+ACCESS_223 accessibility-serial-key
+ACCESS_224 accessibility-show-sounds
+ACCESS_225 accessibility-sound-sentry
+ACCESS_226 accessibility-sticky-keys
+ACCESS_227 accessibility-bigtext
+ACCESS_228 accessibility-toggle-keys
+ACCESS_229 accessibility-apps
+ACCESS_230 accessibility-serial-input
+ACCTRES_100
+ACCTRES_101
+ACCTRES_103 account-net-contacts
+ACTMOVIE_0 dx-activemovie
+AMOVIE_2
+AOL aol
+aolphx_200 aol-runner-1
+aolphx_201 aol-runner-2
+aolphx_202 aol-runner-3
+aolphx_203 aol-runner-4
+aolphx_204 aol-runner-5
+aolphx_205 aol-runner-6
+aolphx_206 aol-runner-7
+aolphx_207 aol-runner-8
+APPWIZ_1500 add-remove-programs
+APPWIZ_1501 add-remove-script
+APPWIZ_1502 setup
+ASCTRLS_102 cdrom-insert
+ASD_100
+AWFXEX32_109 fax-error
+AWFXEX32_AWFXEX fax
+Baseball_100 screensaver-plus
+BPCPOST_128
+BROWSEUI_1
+CABVIEW_105
+CABVIEW_1 cab
+CALC_SC calculator
+CDFVIEW_8192 satellite
+CDFVIEW_8193 file-satellite
+CDFVIEW_8194
+CDFVIEW_8195
+CDFVIEW_8196 folder-satellite
+CDFVIEW_8197
+CDFVIEW_ICONGLEAM
+CDPLAYER_107 audio-cd
+CFGWIZ32_200 add-remove-hardware
+Channel_Screen_Saver_100 screensaver
+Flying_Windows_100 screensaver-flying-windows
+CLEANMGR_104 disk-cleanup
+CLEANMGR_111
+CLEANMGR_114 convert-to-fat32
+CLICONFG_100 setup-network
+CLICONFG_1_100
+COMCTL32_1_20480 error
+COMCTL32_1_20481 question
+COMCTL32_1_20482 warning
+COMCTL32_20480
+COMCTL32_20481
+COMCTL32_20482
+COMCTL32_2_20480
+COMCTL32_2_20481
+COMCTL32_2_20482
+CRYPTUI_3409
+CRYPTUI_3410 certificate
+CRYPTUI_3411 certificate-error
+CRYPTUI_3412 certificate-warning
+CRYPTUI_3413 certificate-portrait
+CRYPTUI_3414 certificate-portrait-error
+CRYPTUI_3416 certificate-portrait-warning
+CRYPTUI_3417 certificate-portrait-rejected
+CRYPTUI_3418 certificate-bundle
+CRYPTUI_3419 certificate-bundle-error
+CRYPTUI_3420 certificate-bundle-warning
+CRYPTUI_3421 signature
+CRYPTUI_3422 signature-error
+CRYPTUI_3423 signature-warning
+CRYPTUI_3424 certificate-server
+CRYPTUI_3425 certificate-key
+CRYPTUI_3426 certificate-app
+CVT1_128
+CVT1_134
+CVTAPLOG_2000 defragment
+DATACLEN_100
+DCOMCNFG_133
+DCOMCNFG_135
+DCOMCNFG_136
+DCOMCNFG_137
+DESK_100
+DESK_1900 display
+DESK_40 display-settings
+DIGEST_110 digest
+DIRECTCC_1005 analog-direct-connect
+DIRECTCC_DIRECTCC
+DISKCOPY_1 floppy-copy
+DPMODEMX_1_701 modems
+DPMODEMX_701
+dpvhelp_107 directx
+dpvoice_120
+dpvoice_124 microphone
+dpvoice_125 sound
+dpvsetup_1
+DXDIAG_105 directx-warning
+DXMASF_500 media-asf
+DXMASF_501 media-asf-download
+DXMASF_502 media-asf-stream
+EXPLORER_100 my-computer
+EXPLORER_101
+EXPLORER_102
+EXPLORER_103
+EXPLORER_104 printer-missing
+FONTEXT_1 folder-fonts-alt
+FONTEXT_2 file-ttf
+FONTEXT_3 file-fon
+FONTEXT_4 file-font-a
+FONTVIEW_110
+FONTVIEW_111
+GCDEF_100 gaming-options
+GCDEF_1_100
+HH_101
+HHCTRL_ICONCDROM cdrom-alt
+HHCTRL_ICONDISK350 floppy-alt
+HHCTRL_ICON!HTMLHELP html-help
+ICM32_100 icm
+ICMUI_100 icm-profile
+ICMUI_101 icm-profile-alt
+ICWSCRPT_3000 installer
+IESETUP_102 internet-options
+IESHWIZ_134
+IMGADMIN_214
+INETCPL_1302
+INETCPL_1304 truetype
+INETCPL_1307 internet-security
+INETCPL_1309 globe-alt
+INETCPL_1312
+INETCPL_1313
+INETCPL_1314 dial-up-connection
+INETCPL_1321
+INETCPL_1323
+INETCPL_4440
+INETCPL_4441
+INETCPL_4442
+INETCPL_4443
+INETCPL_4447
+INETCPL_4459
+INETCPL_4480 internet-allow
+INETCPL_4481 internet-block
+INETCPL_4482
+INETCPL_4483
+INETCPL_4485
+INETCPL_4486
+INETCPL_4487
+INETCPL_4496
+INETCPL_4497 internet-shortcut
+INETCPLC_1303 internet-history
+INETCPLC_1306 internet-favorites
+INETCPLC_1319
+INETFIND_1
+INETRES_1
+INTERNAT_151
+INTL_101
+ISIGN32_ICO_APP
+ITSS_1
+IVFSRC_128
+JAVACYPT_4001
+JAVACYPT_4002
+JAVACYPT_4003
+JAVACYPT_4004
+JAVACYPT_4005
+JAVACYPT_4006
+JAVACYPT_4007
+JAVACYPT_4008
+JAVACYPT_4009
+JAVACYPT_4010
+JOY_102
+JOY_1_102
+JOY_1_129
+JOY_1_131
+JOY_1_132
+JOY_1_138
+JOY_129
+JOY_131
+JOY_132
+JOY_138
+Jungle_100
+JVIEW_IDI_QUICKAPP
+KODAKIMG_128
+KODAKIMG_129
+KODAKIMG_130
+KODAKPRV_129
+KODAKPRV_130
+LIGHTS_100
+LIGHTS_101
+LIGHTS_102
+LIGHTS_103
+MAIN_100
+MAIN_200
+MAIN_300
+MAIN_400
+MAIN_500
+mapi32_501
+mapi32_801
+MAPISTUB_501
+MAPISTUB_801
+MMSYS_100 sound-settings
+MMSYS_101
+MMSYS_103 sound-mixer
+MMSYS_104 sound-cd-audio
+MMSYS_105 sound-peripherals
+MMSYS_106 multimedia-video-capture
+MMSYS_107 multimedia-audio-capture
+MMSYS_108 joystick
+MMSYS_109 sound-application
+MMSYS_110 sound-speakers
+MMSYS_111 camcorder
+MMSYS_112
+MMSYS_113
+MMSYS_115
+MMSYS_116
+MMSYS_117 file-audio
+MMSYS_118 file-mid
+MMSYS_119 file-video
+MMSYS_120 midi
+MMSYS_121
+MMSYS_122
+MMSYS_125
+MMSYS_127
+MMSYS_130
+MMSYS_99 multimedia
+MNMSRVC_100 netmeeting
+MOBSYNC_132
+MOBSYNC_139 netmeeting-sync
+MOBSYNC_2050
+MOBSYNC_2051
+MOBSYNC_2052
+MOBSYNC_2053
+MOBSYNC_2054
+MOBSYNC_2055
+MOBSYNC_2056
+MOBSYNC_2057
+MOBSYNC_2058
+MOBSYNC_3118 scheduled-task
+MOBSYNC_3129
+MPLAYER_10 wmp
+MPLAYER_1_10 file-wmp
+MPLAYER_1_11
+MPLAYER_1_12
+MPLAYER_1_13
+MPLAYER_1_14
+MPLAYER_1_15
+MPLAYER_11
+MPLAYER_12
+MPLAYER_13
+MPLAYER_14
+MPLAYER_15
+MSCONF_103
+MSCONFIG_1
+MSDXM_110
+MSDXM_313
+MSDXM_4054
+MSDXM_4055
+MSDXM_4056
+MSDXM_5206
+MSDXM_5214
+MSDXM_5215
+MSDXM_5216
+MSDXM_5217
+MSDXM_5218
+MSDXM_5219
+MSDXM_5220
+MSDXM_5222
+MSDXM_5223
+MSDXM_5292
+MSDXM_5293
+MSDXM_5294
+MSDXM_5295
+MSHTML_2660 internet-explorer
+MSHTML_2661 file-html
+MSHTML_2664 html-link
+MSHTML_2665
+MSHTML_2668
+MSHTML_2669
+MSHTML_2670
+MSHTML_2671
+MSHTML_2672
+MSHTML_2673
+MSHTML_2674 internet-search
+MSHTML_2675
+MSHTML_2676
+MSHTML_2677
+MSHTML_2678
+MSHTML_2679 internet-privacy
+MSI_201
+MSI_202
+MSI_203
+MSIEFTP_2 folder-web
+MSIEFTP_3 folder-web-files
+MSIEFTP_9
+msiexec_1 msi
+msihnd_10
+msihnd_1
+msihnd_23
+msihnd_2
+msihnd_3
+msihnd_4
+msihnd_5
+msihnd_6
+msihnd_7
+MSLOCUSR_103
+MSNP32_FOLDER_ICON
+MSNP32_SERVER_ICON
+MSNP32_WRKGRP_ICON
+MSRATING_109
+MSRATING_112
+MSRATING_114
+MSRATING_120
+MSRATING_319
+MSRATING_320
+MSRATING_336
+MSRATING_337
+MSTASK_100 folder-scheduled-tasks
+MSTASK_273
+MSTASK_274 scheduled-tasks-list
+MSTASK_401
+MSTASK_402
+MSTASK_403
+MSVBVM50_1201
+MSVBVM50_1202
+MSVBVM50_1203
+MSVBVM50_1204
+MSXML_128
+MSXML_129
+MYDOCS_100 my-documents
+Mystery_100
+Nature_100
+NOTEPAD_1 notepad-alt
+NOTEPAD_2 notepad
+OCCACHE_100 folder-ie
+OCCACHE_101
+OCCACHE_110
+OCCACHE_111
+ODBCINT_8707
+PASSWORD_1000
+PLUGIN_2
+POWERCFG_200 power-plug
+POWERCFG_202 power-battery
+POWEROLD_210
+POWEROLD_211
+QUARTZ_100 quartz-video
+QUARTZ_101 quartz-video-green
+QUARTZ_102 quartz-video-magenta
+QUARTZ_103 quartz-video-cyan
+QUARTZ_200 quartz-audio
+QUARTZ_201 quartz-audio-green
+QUARTZ_202 quartz-audio-magenta
+QUARTZ_203 quartz-audio-cyan
+QUARTZ_300 quartz-midi
+QUARTZ_301 quartz-midi-purple
+RASAPI32_104 rasapi
+RASAPI32_110
+REGEDIT_100 registry
+REGEDIT_101 file-reg
+REGEDIT_201
+REGEDIT_202
+REGEDIT_203
+REGEDIT_204
+REGEDIT_205
+REGEDIT_206
+REGWIZC_117
+RNAAPP_101
+RNAAPP_102
+RNAAPP_110
+RNAAPP_111
+RNAAPP_112
+RNAAPP_113
+RNAAPP_114
+RNANP_100
+RNAUI_100
+RNAUI_101
+RNAUI_102
+RNAUI_103
+Science_100
+SCROBJ_101
+SENDMAIL_2001
+setup_101
+setup_103
+SETUPAPI_10
+SETUPAPI_11
+SETUPAPI_159
+SETUPAPI_20
+SETUPAPI_21
+SETUPAPI_22
+SETUPAPI_23
+SETUPAPI_24
+SETUPAPI_500
+SETUPAPI_501
+SETUPAPI_53
+SFC_102 folder-check
+SHD401LC_4
+SHD401LC_512
+SHDOC401_200
+SHDOC401_4
+SHDOC401_512
+SHDOC401_5
+SHDOC401_6
+SHDOCLC_13104
+SHDOCLC_190
+SHDOCLC_191 folder-favorites
+SHDOCLC_20782
+SHDOCVW_100
+SHDOCVW_102
+SHDOCVW_103
+SHDOCVW_105
+SHDOCVW_110
+SHDOCVW_111
+SHDOCVW_112
+SHDOCVW_113
+SHDOCVW_116
+SHDOCVW_118
+SHDOCVW_12768
+SHDOCVW_12770
+SHDOCVW_204
+SHDOCVW_206
+SHDOCVW_20780 folder-history
+SHDOCVW_20783 calendar
+SHDOCVW_20784
+SHDOCVW_20785
+SHDOCVW_20786
+SHDOCVW_20788
+SHDOCVW_20789 file-warning
+SHDOCVW_3002
+SHELL32_10 drive-network
+SHELL32_11 drive-network-disconnected
+SHELL32_12 drive-cdrom
+SHELL32_133 documents
+SHELL32_134 find-files
+SHELL32_135 find-computer
+SHELL32_136 shutdown
+SHELL32_137 folder-control-panel
+SHELL32_138 folder-printers
+SHELL32_139 printers-add
+SHELL32_13 memory
+SHELL32_140 printer-network
+SHELL32_141 printer-driver
+SHELL32_147 folder-rename
+SHELL32_14 globe
+SHELL32_151 file-inf
+SHELL32_152 file-txt
+SHELL32_153 program-config
+SHELL32_154 file-dll
+SHELL32_155 file-fon
+SHELL32_156 file-ttf
+SHELL32_157 file-font-a2
+SHELL32_15 network
+SHELL32_160
+SHELL32_167
+SHELL32_168 printer-ok
+SHELL32_169 printer-network-ok
+SHELL32_16 server
+SHELL32_170 printer-driver-ok
+SHELL32_171 object-tree
+SHELL32_173
+SHELL32_17 printer
+SHELL32_18 network-neighborhood
+SHELL32_19 network-neighborhood-alt
+SHELL32_1 file-unknown
+SHELL32_20 start-programs
+SHELL32_21 start-documents
+SHELL32_22 start-settings
+SHELL32_23 start-find
+SHELL32_24 start-help
+SHELL32_25 start-run
+SHELL32_26 start-sleep
+SHELL32_27 start-eject
+SHELL32_28 start-shutdown
+SHELL32_29 sharing
+SHELL32_2 file-rtf
+SHELL32_30 shortcut
+SHELL32_31 scheduled
+SHELL32_32 recycle-bin
+SHELL32_33 recycle-bin-full
+SHELL32_34 folder-dialup
+SHELL32_35 desktop
+SHELL32_36 folder-control-panel-alt
+SHELL32_37 folder-programs
+SHELL32_39 folder-fonts
+SHELL32_3 file-exe
+SHELL32_40 start-menu
+SHELL32_41 audio-cd
+SHELL32_42 tree
+SHELL32_43 folder-server
+SHELL32_44 start-favorites
+SHELL32_45 login
+SHELL32_46 folder-search
+SHELL32_47 windows-update
+SHELL32_4 folder
+SHELL32_5 folder-open
+SHELL32_6 drive-floppy-525
+SHELL32_7 drive-floppy
+SHELL32_8 drive-tape
+SHELL32_9 drive
+SHSCRAP_100
+SMMSCRPT_100
+SNDREC32_10
+SNDREC32_15
+SNDREC32_16
+SNDVOL32_300 volume
+SNDVOL32_303 volume-off
+SNDVOL32_304
+Space_100
+Sports_100
+STICPL_101
+STICPL_104
+STICPL_108
+STICPL_109
+STICPL_110
+STICPL_111
+STIMON_111
+SYNCUI_120 briefcase
+SYNCUI_135
+SYSTRAY_210
+SYSTRAY_220
+SYSTRAY_221
+SYSTRAY_300
+TDC_203
+TELEPHON_514
+TheMatrix_MAINICON
+THEMES_101 desktop-themes
+THUMBVW_5001
+THUMBVW_5003
+THUMBVW_5004
+THUMBVW_5005
+TIMEDATE_200 time-date
+TLOCMGR_501
+TOUR98_128
+TOUR98_129
+Travel_100
+TSHOOT_1
+TUNEUP_101
+TWEAKUI_1 tweak-ui
+TWEAKUI_3
+UNAM4IE_0
+Underwater_100
+UPWIZUN_110
+URL_102
+URL_106
+USBUI_111
+USBUI_112
+USBUI_113
+USBUI_114
+USBUI_115
+USBUI_116
+USBUI_117
+WEBCHECK_114
+WEBCHECK_118
+WEBCHECK_121
+WEBCHECK_122
+WEBCHECK_160
+WEBCHECK_400
+WEBCHECK_402
+WELCOME_102 microsoft
+WELDATA_128
+WINHLP32_4000 help-question
+WINHLP32_4001
+WINHLP32_4002 file-hh
+WININET_128
+WININET_137
+WININET_138
+WININET_32546 security
+WINREP_109
+WINREP_110
+WINREP_112
+WinSCP-5_MAINICON
+WJVIEW_IDI_QUICKAPP
+WL32DLL_100
+WRITE_1 wordpad
+WSCRIPT_100 script
+WSCRIPT_101 script-cyan
+WSCRIPT_102 script-yellow
+WSCRIPT_1
+WUPDMGR_LARGEICON window-update
+WUPDMGR_SMALLICON
+MSPAINT_2 mspaint
+winamp.exe_14_102 winamp
+winamp.exe_14_131 file-winamp
+winamp.exe_14_162 winamp-alt1
+winamp.exe_14_163 winamp-alt2
+winamp.exe_14_164 winamp-alt3
+winamp.exe_14_167 winamp-alt4
+winamp.exe_14_169 winamp-alt5
+winamp.exe_14_178 winamp-alt6
+winamp.exe_14_179 winamp-alt7
+winamp.exe_14_180 winamp-alt8
+winamp.exe_14_181 winamp-alt9
+winamp.exe_14_182 winamp-alt10

@@ -1,0 +1,116 @@
+{{ $path   := (qs "path" "fs") }}
+{{ $parent := dirname (dirname $path) }}
+{{ $key    := (replace $path "/" "." -1) }}
+{{ $pkey   := (replace (dirname $path) "/" "." -1) }}
+{{ $label  := (qs "label" (get $.page (printf "%s.label" $pkey))) }}
+{{ $icon  :=  (qs "icon"  (or (get $.page (printf "%s.icon" $pkey)) "folder")) }}
+<div class="w9x-menubar pure-menu pure-menu-horizontal">
+    <div class="w9x-toolbar-handle"></div>
+    <ul class="pure-menu-list">
+        <li class="pure-menu-item">
+            <a class="pure-menu-link"><u>F</u>ile</a>
+        </li>
+
+        <li class="pure-menu-item">
+            <a class="pure-menu-link"><u>H</u>elp</a>
+        </li>
+    </ul>
+</div>
+
+<div class="w9x-toolbar">
+    <div class="w9x-toolbar-handle"></div>
+    <a class="btn">
+        <i class="sprite sprite-back"></i>
+        Back
+    </a>
+
+    <a class="btn">
+        <i class="sprite sprite-forward"></i>
+        Forward
+    </a>
+
+    <a class="btn" onclick="app.load(this, '/views/_explorer.html?path={{ $parent }}'); return false;">
+        <i class="sprite sprite-up"></i>
+        Up
+    </a>
+
+    <hr />
+
+    <a class="btn">
+        <i class="sprite sprite-cut"></i>
+        Cut
+    </a>
+
+    <a class="btn">
+        <i class="sprite sprite-copy"></i>
+        Copy
+    </a>
+
+    <a class="btn">
+        <i class="sprite sprite-paste"></i>
+        Paste
+    </a>
+
+    <hr />
+
+    <a class="btn">
+        <i class="sprite sprite-undo"></i>
+        Undo
+    </a>
+
+    <hr />
+
+    <a class="btn">
+        <i class="sprite sprite-delete"></i>
+        Delete
+    </a>
+
+    <a class="btn">
+        <i class="sprite sprite-properties"></i>
+        Properties
+    </a>
+
+    <hr />
+
+    <a class="btn">
+        <i class="sprite sprite-views"></i>
+        Views
+    </a>
+</div>
+
+<div class="w9x-content-main explorer w9x-windows-explorer">
+    <div class="explorer-sidebar">
+        <i class="ico-32 ico-{{ $icon }}"></i>
+        <h1>{{ $label }}</h1>
+        <p>Select an item to view its description.</p>
+    </div>
+
+    <div class="explorer-main icon-container">
+        {{ range $i, $icon := sliceify (get $.page $key) }}
+        {{ if not $icon.hide }}
+        <a
+            class="icon"
+            onclick="app.select(this)"
+            {{ if $icon.error }}
+            ondblclick="window.app.error('{{ or $icon.error.title `Error` }}', '{{ $icon.error.message }}')"
+            {{ else if $icon.href }}
+            ondblclick="app.load(this, '{{ $icon.href }}'); return false;"
+            {{ else }}
+            ondblclick="app.load(this, '/views/_explorer.html?path={{ $path }}/{{ $i }}/sub'); return false;"
+            {{ end }}
+        >
+            <i
+                {{ if $icon.icon }}
+                class="ico-32 ico-{{ $icon.icon }}"
+                {{ else if extname $icon.label }}
+                class="ico-32 ico-file{{ replace (lower (extname $icon.label)) `.` `-` -1 }}"
+                {{ else }}
+                class="ico-32 ico-folder"
+                {{ end }}
+            ></i>
+            <span>{{ $icon.label }}</span>
+        </a>
+        {{ end }}
+        {{ end }}
+    </div>
+</div>

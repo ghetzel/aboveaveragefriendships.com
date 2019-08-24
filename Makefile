@@ -5,7 +5,15 @@ GO111MODULE ?= on
 
 all: run
 
-run:
+css:
+	truncate -s0 src/assets/_win9x_sprites.scss
+	truncate -s0 src/assets/_win9x_icons.scss
+	cd src/assets/images/sprites && make --silent css > ../../_win9x_sprites.scss
+	cd src/assets/images/icons && make --silent css > ../../_win9x_icons.scss
+
+assets: css
+
+run: assets
 	diecast -L debug -a :28419
 
 pass:

@@ -1,0 +1,918 @@
+$desktop:   #00807F;
+$desktopFG: white;
+$areaBG:    white;
+$base:      #C0C0C0;
+$baseFG:    black;
+$titleFG:   white;
+$titleBG1:  #010070;
+$titleBG2:  #0081EE;
+
+// menu hover state
+$hoverBG:   #000078;
+$hoverFG:   white;
+
+// explorer icons (selected)
+$selectFG:  white;
+$selectBG:  #000078;
+
+// window border
+$windowOTL: #D0CFC0;
+$windowOBR: #000000;
+
+// window highlight
+$windowHTL: #FFFFFF;
+$windowHBR: #7F7F7F;
+
+// window inset
+$windowITL: #7F7F7F;
+$windowIBR: #7F7F7F;
+
+// button inset
+$buttonITL: #DFDFDF;
+$buttonIBR: #808080;
+
+// dimensions
+$taskbarH:         24px;
+$startW:           196px;
+$contextMenuW:     132px;
+$explorerSidebarW: 33%;
+
+@font-face {
+    font-family: mssans;
+    src:
+        url('/assets/fonts/MicrosoftSansSerif.woff'),
+        url('/assets/fonts/MicrosoftSansSerif.eot'),
+        url('/assets/fonts/MicrosoftSansSerif.svg');
+}
+
+@font-face {
+    font-family: mssans;
+    font-weight: bold;
+    src:
+        url('/assets/fonts/MicrosoftSansSerifBold.woff'),
+        url('/assets/fonts/MicrosoftSansSerifBold.eot'),
+        url('/assets/fonts/MicrosoftSansSerifBold.svg');
+}
+
+.ui-widget-content {
+    background: transparent;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.text-red {
+    color: red;
+}
+
+.text-orange {
+    color: orange;
+}
+
+.text-yellow {
+    color: yellow;
+}
+
+.text-green {
+    color: green;
+}
+
+.text-blue {
+    color: blue;
+}
+
+.text-purple {
+    color: purple;
+}
+
+.font-print {
+    font-family: Arial, sans-serif;
+    font-size:   initial;
+    letter-spacing: initial;
+}
+
+.icon {
+    display:         flex;
+    flex-direction:  column;
+    align-items:     center;
+    justify-content: flex-start;
+    width:           72px;
+    height:          72px;
+    text-align:      center;
+    text-decoration: none;
+    color:           $desktopFG;
+    padding:         2px 6px;
+    margin-bottom:   8px;
+
+    & > span {
+        display: inline-block;
+        border:  1px solid transparent;
+        padding: 1px;
+    }
+
+    .ico {
+        margin-bottom: 4px;
+    }
+
+    &.icon-selected {
+        i {
+            position: relative;
+
+            // TODO: need to figure out how to mask the background image
+            // &:before {
+            //     content:               ' ';
+            //     background-image:      linear-gradient(rgba($selectBG, 0.33), rgba($selectBG, 0.33));
+            //     position:              absolute;
+            //     top:                   0;
+            //     left:                  0;
+            //     bottom:                0;
+            //     right:                 0;
+            // }
+        }
+
+        span {
+            border: 1px dotted $selectFG;
+            color:      $selectFG;
+            background: $selectBG;
+        }
+    }
+}
+
+.bar-separator {
+    display:            inline-block;
+    color:              transparent;
+    height:             calc(100% - 3px);
+    margin:             4px 1px;
+    border:             1px solid  $windowIBR;
+    border-right-color: $windowHTL;
+    border-top:         0;
+    border-bottom:      0;
+}
+
+.w9x-toolbar-handle {
+    display:            inline-block;
+    color:              transparent;
+    height:             calc(100% - 3px);
+    margin:             4px 2px;
+    border:             1px solid  $windowHTL;
+    border-right-color: $windowIBR;
+    border-bottom-color: $windowIBR;
+    width:              1px;
+}
+
+input {
+    @extend        .inset-border-deep;
+    height:        100%;
+    margin:        0;
+    border-radius: 0;
+}
+
+.noselect,
+.noselect * {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version */
+                cursor:  default;
+}
+
+.allow-select,
+.allow-select * {
+  -webkit-touch-callout: auto !important; /* iOS Safari */
+    -webkit-user-select: auto !important; /* Safari */
+     -khtml-user-select: auto !important; /* Konqueror HTML */
+       -moz-user-select: auto !important; /* Firefox */
+        -ms-user-select: auto !important; /* Internet Explorer/Edge */
+            user-select: auto !important; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+html {
+    margin:                  0;
+    padding:                 0;
+    font-family:             mssans;
+    font-size:               11px;
+    overflow:                hidden;
+
+    body {
+        margin:                  0;
+        padding:                 0;
+        background:              $desktop;
+        overflow:                hidden;
+        font-smooth:             never !important;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing:  none;
+
+        #desktop {
+            background:  transparent;
+            width:       100vw;
+            height:      calc(100vh - #{$taskbarH} - 5px) !important;
+
+            a {
+                @extend .icon;
+            }
+        }
+
+        #taskbar {
+            @extend          .w9x-frame;
+            position:        absolute;
+            z-index:         100000;
+            height:          $taskbarH;
+            bottom:          -2px;
+            left:            -2px;
+            right:           -2px;
+            border-left:     0px;
+            border-right:    0px;
+            border-bottom:   0px;
+            display:         flex;
+            flex-direction:  row !important;
+            justify-content: flex-start;
+            align-items:     stretch;
+
+            hr {
+                @extend .bar-separator;
+                margin-top: 1px;
+            }
+
+            .w9x-toolbar-handle {
+                margin-top: 3px;
+                height:     calc(100% - 8px);
+            }
+
+            .btn-start {
+                background:    1px center no-repeat url('/assets/images/start.png');
+                padding-left:  19px;
+                width:         54px;
+                color:         black;
+                font-weight:   bold;
+                font-size:     11px;
+                margin:        1px;
+            }
+
+            .system-tray {
+                @extend          .inset-border;
+                position:        absolute !important;
+                right:           2px;
+                top:             2px;
+                bottom:          2px;
+                padding:         8px !important;
+                padding-top:     10px !important;
+                display:         flex;
+                flex-direction:  row !important;
+                justify-content: flex-end;
+                align-items:     center;
+            }
+        }
+    }
+}
+
+.outset-border {
+    border-width:        1px !important;
+    border-style:        solid !important;
+    border-color:        $windowHTL !important;
+    border-bottom-color: $windowITL !important;
+    border-right-color:  $windowITL !important;
+    position:            relative;
+    margin-bottom:       0px;
+}
+
+.inset-border {
+    border-width:        1px !important;
+    border-style:        solid !important;
+    border-color:        $windowITL !important;
+    border-bottom-color: $windowHTL;
+    border-right-color:  $windowHTL;
+    padding:             2px;
+    position:            relative;
+    margin-bottom:       0px;
+}
+
+.inset-border-deep {
+    @extend              .inset-border;
+    border-color:        $windowOBR !important;
+    border-bottom-color: $windowITL !important;
+    border-right-color:  $windowITL !important;
+    position:            relative;
+
+    // &::before {
+    //     @extend              .outer-border-common;
+    //     top:                 1px;
+    //     right:               -1px;
+    //     bottom:              -1px;
+    //     left:                1px;
+    //     box-shadow:          -1px -1px 0 0 blue;
+    //     border:              0;
+    // }
+
+    // &::after {
+    //     @extend              .outer-border-common;
+    //     top:                 -2px;
+    //     right:               -1px;
+    //     bottom:              -1px;
+    //     left:                -2px;
+    //     box-shadow:          1px 1px 0 0 red;
+    //     border:              0;
+    // }
+}
+
+.outer-border-common {
+    content:             " ";
+    position:            absolute;
+    display:             block;
+    pointer-events:      none;
+    width:               auto;
+    height:              auto;
+}
+
+.etched-border {
+    @extend              .inset-border;
+    margin-bottom:       -1px;
+    // margin-top: -1px;
+    border-color:        $windowITL !important;
+    border-bottom-color: $windowITL !important;
+    border-right-color:  $windowITL !important;
+
+    &::before {
+        @extend              .outer-border-common;
+        top:                 1px;
+        right:               -1px;
+        bottom:              -1px;
+        left:                1px;
+        box-shadow:          -1px -1px 0 0 $windowHTL;
+        border:              0;
+    }
+
+    &::after {
+        @extend              .outer-border-common;
+        top:                 -2px;
+        right:               -1px;
+        bottom:              -1px;
+        left:                -2px;
+        box-shadow:          1px 1px 0 0 $windowHTL;
+        border:              0;
+    }
+}
+
+.w9x-frame {
+    position:            absolute;
+    border:              1px solid $windowOTL;
+    border-bottom-color: $windowOBR !important;
+    border-right-color:  $windowOBR !important;
+    box-shadow:          inset 1px 1px 0 0 $windowHTL, inset -1px -1px 0 0 $windowHBR;
+    padding:             2px;
+    padding-right:       3px;
+    background:          $base;
+    font-family:         mssans;
+    will-change:         transform;
+    display:             flex;
+    justify-content:     stretch;
+    align-items:         stretch;
+    flex-direction:      column;
+
+    &.w9x-window {
+        position:            absolute !important;
+    }
+
+    &.state-maximized {
+        position: absolute !important;
+        top:      -2px !important;
+        left:     -2px !important;
+        width:    calc(100% + 2px) !important;
+        height:   calc(100% - #{$taskbarH} ) !important;
+
+        .w9x-titlebar {
+            margin-top:    -1px;
+            margin-left:   -1px;
+            padding-right: 6px;
+        }
+
+        .btn-maximize {
+            background-image: url('/assets/images/sprites/restore-normal.gif') !important;
+        }
+    }
+
+    &.w9x-dialog {
+        @extend .noselect;
+        .w9x-window-contents {
+            .w9x-dialog-body {
+                flex: 1;
+                display:         flex;
+                justify-content: stretch;
+                flex-direction:  row;
+                align-items:     flex-start;
+                padding:         12px;
+                padding-bottom:  0;
+
+                > i {
+                    margin-right: 12px;
+                }
+
+                > div {
+                    flex: 1;
+                    margin-top: 2px;
+                }
+            }
+
+            .w9x-dialog-buttons {
+                flex:            1;
+                display:         flex;
+                flex-direction:  row;
+                justify-content: center;
+                align-items:     center;
+                padding:         12px;
+
+                > button {
+                    width:  76px;
+                    height: 24px;
+                }
+            }
+        }
+    }
+
+    // &:before {
+    //     @extend              .outer-border-common;
+    //     left:                -1px;
+    //     width:               1px;
+    //     height:              1px;
+    //     bottom:              -2px;
+    //     border-bottom:       1px solid $windowOBR;
+    // }
+
+    // &:after {
+    //     @extend              .outer-border-common;
+    //     right:               -2px;
+    //     width:               1px;
+    //     height:              1px;
+    //     top:                 -1px;
+    //     border-top:          1px solid $windowOBR;
+    // }
+
+    .w9x-titlebar {
+        @extend                .noselect;
+        align-items:           center;
+        background:            $titleBG1;
+        background:            -moz-linear-gradient(left, $titleBG1 0%, $titleBG2 100%);
+        background:            -webkit-linear-gradient(left, $titleBG1 0%, $titleBG2 100%);
+        background:            linear-gradient(to right, $titleBG1 0%, $titleBG2 100%);
+        border-right-color:    $windowIBR;
+        color:                 $titleFG;
+        display:               flex;
+        font-weight:           bold;
+        height:                13px;
+        justify-content:       space-between;
+        align-items:           center;
+        letter-spacing:        0px;
+        line-height:           11px;
+        padding-bottom:        5px;
+        padding:               4px;
+        vertical-align:        middle;
+        margin-right:          -1px;
+
+        .w9x-titlebar-actions {
+            margin-top: 2px;
+
+            .btn {
+                font-weight:  bold;
+                width:        14px;
+                height:       12px;
+                margin:       0px;
+                margin-left:  2px;
+                padding:      0;
+
+                &.btn-minimize {
+                    background-image: url('/assets/images/sprites/minimize-normal.gif');
+                }
+
+                &.btn-maximize {
+                    background-image: url('/assets/images/sprites/maximize-normal.gif');
+                }
+
+                &.btn-close {
+                    background-image: url('/assets/images/sprites/close-normal.gif');
+                    margin-left: 4px;
+                }
+            }
+        }
+    }
+
+    .w9x-window-contents {
+        flex:            1;
+        display:         flex;
+        flex-direction:  column;
+        justify-content: stretch;
+        align-items:     stretch;
+        overflow:        hidden;
+
+        .w9x-addressbar {
+            @extend          .etched-border;
+            margin-top:      -2px;
+            height:          20px;
+            display:         flex;
+            flex-direction:  row;
+            justify-content: stretch;
+            align-content:   stretch;
+
+            > .w9x-toolbar-handle {
+                margin-top:  1px;
+            }
+
+            > span {
+                line-height:    21px;
+                vertical-align: middle;
+                padding:        0 3px;
+            }
+
+            > input {
+                flex: 1;
+                margin-top:    1px;
+                height:        14px;
+            }
+        }
+
+        .w9x-linksbar {
+            // margin-top:      -2px;
+            height:          20px !important;
+            @extend .noselect;
+        }
+
+        .w9x-menubar {
+            @extend          .etched-border;
+            border:          0px;
+            height:          24px;
+            padding:         2px;
+            flex-direction:  row;
+            box-shadow:      none;
+            margin-top:      1px;
+            @extend          .noselect;
+
+            .w9x-toolbar-handle {
+                margin-top:  1px;
+            }
+
+            > .pure-menu-list {
+                display:         flex;
+                justify-content: flex-start;
+                align-items:     center;
+
+                .pure-menu-link::after {
+                    display: none;
+                }
+            }
+
+            ul {
+                list-style-type: none;
+            }
+
+            a {
+                padding:     0px 8px;
+                border:      1px solid transparent;
+
+                &:hover {
+                    @extend .outset-border;
+                }
+            }
+
+            .pure-menu-item {
+                width: auto;
+            }
+        }
+
+        .w9x-toolbar {
+            @extend          .etched-border;
+            height:          46px;
+            display:         flex;
+            justify-content: flex-start;
+            align-items:     center;
+            margin-bottom:   1px;
+            @extend .noselect;
+
+            hr {
+                @extend       .bar-separator;
+                margin-left:  2px;
+                margin-right: 2px;
+            }
+
+            .btn {
+                @extend .btn-block;
+            }
+        }
+
+        .w9x-content-main {
+            @extend           .etched-border;
+            flex:             1;
+            background-color: $areaBG;
+            margin-bottom:    1px;
+            overflow-y:       auto;
+            overflow-x:       hidden;
+
+            &.w9x-webview {
+                padding: 0;
+                width:   calc(100% - 2px);
+                height:  calc(100% - 24px);
+            }
+        }
+    }
+}
+
+.explorer {
+    display:         flex;
+    justify-content: stretch;
+    align-items:     stretch;
+    padding:         0 !important;
+    border:          0 !important;
+
+    .explorer-sidebar {
+        width:      $explorerSidebarW;
+        min-width:  168px;
+        background: transparent top left no-repeat url('/assets/images/wvleft.png');
+
+        .ico {
+            margin:        16px;
+            margin-bottom: 8px;
+        }
+
+        h1 {
+            background:             transparent 0 bottom no-repeat url('/assets/images/wvline.gif');
+            background-size:        100% 1px;
+            font-family:            sans-serif;
+            padding:                0;
+            padding-left:           16px;
+            padding-bottom:         8px;
+            padding-bottom:         8px;
+            margin:                 0;
+            font-size:              20px;
+            font-smooth:            never;
+            -webkit-font-smoothing: none;
+        }
+
+        p {
+            padding:                16px;
+            font-family:            sans-serif;
+            font-size:              12px;
+            margin:                 0;
+            font-smooth:            never;
+            -webkit-font-smoothing: none;
+        }
+    }
+
+    .explorer-main {
+        flex:            1;
+
+        .icon {
+            @extend .icon;
+            color:  $baseFG;
+            float: left;
+        }
+    }
+}
+
+.btn {
+    @extend              .w9x-frame;
+    @extend              .noselect;
+    position:            relative !important;
+    display:             inline-block;
+    border:              1px solid $windowHTL;
+    border-bottom-color: $windowHBR;
+    border-right-color:  $windowHBR;
+    box-shadow:          inset -1px -1px 0 0 $buttonIBR, inset 1px 1px 0 0 $buttonITL;
+    margin:              2px;
+    text-align:          center;
+    font-size:           11px;
+    background-position: top left;
+    background-repeat:   no-repeat;
+
+    &:before {
+        content:    " ";
+        position:   absolute;
+        top:        -1px;
+        right:      -1px;
+        width:      1px;
+        height:     1px;
+        background: $windowOBR;
+    }
+}
+
+.btn-block {
+    box-shadow:      none;
+    width:           64px;
+    height:          calc(100% - 4px);
+    margin:          0px;
+    margin-top:      1px;
+    text-align:      center;
+    display:         flex;
+    flex-direction:  column;
+    align-items:     center;
+    justify-content: flex-start;
+    border-color:    transparent !important;
+
+    .sprite {
+        display:       block;
+        margin-bottom: 4px;
+    }
+
+    &:after,
+    &:before{
+        display: none;
+    }
+
+    &:hover {
+        @extend .outset-border;
+    }
+}
+
+.ico {
+    background-color:    transparent;
+    background-position: center;
+    background-repeat:   no-repeat;
+    display:             inline-block;
+    background-size:     cover;
+}
+
+.ico-16 {
+    @extend .ico;
+    width:  16px;
+    height: 16px;
+    margin: 1px;
+}
+
+.ico-32 {
+    @extend .ico;
+    width: 32px;
+    height: 32px;
+    margin: 2px;
+}
+
+.ico-24 {
+    @extend .ico-32;
+    width: 24px;
+    height: 24px;
+}
+
+.ico-48 {
+    @extend .ico;
+    width: 48px;
+    height: 48px;
+    margin: 4px;
+}
+
+.sprite {
+    background-color:    transparent;
+    background-repeat:   no-repeat;
+    background-position: center;
+    display:             inline-block;
+    width:               24px;
+    height:              24px;
+}
+
+.pure-menu-children {
+    @extend  .pure-menu;
+    display: none;
+}
+
+.pure-menu {
+    @extend .w9x-frame;
+    @extend .noselect;
+    min-width:  $contextMenuW;
+    // position:   relative !important;
+
+    a {
+        text-decoration: none;
+    }
+
+    .separator {
+        height:              0px;
+        border:              1px solid $windowITL;
+        border-bottom-color: $windowHTL;
+        border-left:         0px;
+        border-right:        0px;
+        margin:              0px;
+        margin-left:         3px;
+        padding:             0px;
+        width:               calc(100% - 6px);
+    }
+
+    .pure-menu-has-children > .pure-menu-link::after {
+        padding:    0;
+        position:   absolute;
+        float:      right;
+        width:      8px;
+        height:     8px;
+        right:      10px;
+        content:    " ";
+        background: transparent center no-repeat url('/assets/images/caret.png');
+    }
+
+    .pure-menu-has-children > .pure-menu-link:hover::after {
+        background-image: url('/assets/images/caret-white.png');
+    }
+
+    .pure-menu-item {
+        display: flex;
+        align-items: center;
+        justify-content: stretch;
+        margin:          0;
+        color:           black;
+
+        .ico {
+            margin:       2px;
+            margin-right: 5px;
+        }
+
+        .pure-menu-link {
+            flex: 1;
+            display:     flex;
+            align-items: center;
+            color:       $baseFG;
+            padding:     0;
+            position:    relative;
+
+            &:hover {
+                background:       transparent;
+            }
+
+            &:focus {
+                background: transparent;
+                color:      inherit;
+            }
+        }
+
+        .ui-state-active {
+            .ui-icon-caret-1-e {
+                background-image: url('/assets/images/caret-white.png');
+            }
+
+            color:            $hoverFG !important;
+        }
+    }
+
+    // > li,
+    // > li > a {
+    //     @extend .pure-menu-item;
+    // }
+}
+
+#start {
+    @extend            .pure-menu;
+    position:          absolute !important;
+    width:             $startW;
+    bottom:            $taskbarH + 2px;
+    left:              4px;
+    position:          absolute;
+    z-index:           100001;
+    padding-left:      20px;
+    background:        -moz-linear-gradient(top, #000000 0%, #0000ff 100%), $base;
+    background:        -webkit-linear-gradient(top, #000000 0%,#0000ff 100%), $base;
+    background:        linear-gradient(to bottom, #000000 0%,#0000ff 100%), $base;
+    filter:            progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#0000ff',GradientType=0 ); /* IE6-9 */
+    background-size:   20px calc(100% - 1px);
+    background-repeat: no-repeat;
+    display:           none;
+
+    &.open {
+        display:       block;
+    }
+
+    > .pure-menu-list {
+        > .pure-menu-item {
+            height:       32px;
+            // padding:      1px;
+            // width:        calc(100% - 4px);
+            margin-left:  2px;
+
+            > .pure-menu-link {
+                padding: 2px;
+            }
+
+            .ico {
+                margin-right: 10px !important;
+            }
+        }
+
+        .pure-menu-item {
+            &:hover {
+                border:           0px;
+                background-color: $hoverBG;
+                color:            $hoverFG;
+
+            }
+
+            a:hover {
+                color:        $hoverFG;
+            }
+        }
+    }
+}
+
+.clippy, .clippy-balloon {
+    z-index: 1000000;
+}
+
+@import "assets/_win9x_icons.scss";
+@import "assets/_win9x_sprites.scss";

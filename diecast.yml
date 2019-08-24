@@ -1,9 +1,5 @@
 root: src
 
-patterns:
-- '*.xml'
-- '*.html'
-
 authenticators:
 -   type: basic
     paths:
@@ -49,3 +45,181 @@ actions:
             fi
 
             exit 0
+
+header:
+    page:
+        desktop:
+            icons:
+            -   label: My Computer
+                icon:  my-computer
+                href:  /views/_explorer.html
+
+            -   label: My Documents
+                icon:  my-documents
+                href:  /views/_explorer.html?path=fs/1/sub/0/sub
+
+            -   label: Network Neighborhood
+                icon:  network-neighborhood
+                href:  /views/_explorer.html?path=fs/8/sub
+
+            -   label: Recycle Bin
+                icon:  recycle-bin-full
+                href:  /views/_explorer.html?path=fs/7/sub
+
+            -   label: Winamp
+                icon:  winamp
+                href:  /views/_winamp.html
+                unmanaged: true
+
+        start:
+            shortcuts:
+            -   label: 'Try DogPile™ TODAY!'
+                icon:  dogpile
+                title: 'Who Searches the Search Engines? - Microsoft Internet Explorer'
+                href:  '/views/_ie.html?url=https://www.dogpile.com'
+
+            main:
+            - separator: true
+
+            -   label:   Programs
+                icon:    start-programs
+                submenu: programs
+
+            -   label:   Favorites
+                icon:    start-favorites
+
+            -   label:   Documents
+                icon:    start-documents
+
+            -   label:   Settings
+                icon:    start-settings
+                submenu: settings
+
+            -   label:   Find
+                icon:    start-find
+
+            -   label:   Help
+                icon:    start-help
+
+            -   label:   Run...
+                icon:    start-run
+                error:
+                    message: Error loading shared library SHELL32.DLL
+
+            - separator: true
+
+            -   label:   Shut Down...
+                icon:    start-shutdown
+
+            programs:
+            -   label: Web Design Services
+                icon:  globe
+                title: Custom Web Design for your product or homepage.
+                href:  /views/_web_design.html
+
+            -   label: Internet Explorer
+                icon:  internet-explorer
+                title: Microsoft Internet Explorer
+                href:  '/views/_ie.html?url=https://aboveaveragefriendships.com/main.html'
+
+            settings:
+            -   label: Control Panel
+                icon:  folder-control-panel
+                error:
+                    message: 'T͟o̱̣͕̜͍ ̻͙̯̜̼̼̬i̛͈̙̗̭̖̘n͓̣̰̙̟͎v͇̰͍̥̩̻o̢̥̤̬k͉̝͕̼̦̟ḛ͉̟̰̞̦̱ ̶̫̖ͅt͍͎̹̥h͈̫͈͈̣͈e̢͓ ̺͙̭h͙̠̩̠͖̥͘i͔̤̗̲̰v̩̹̫̜̀e̕-m̮̻̞̺͟i͍̟̲͇̫̙nd͖͉͕͕͙̝ ͙͚̟̥̖̖͢ͅrè̗͕̮͎̲̯̝p̘r҉̮̮͚e̗͞s̻̖͜ͅe͏̭͖̹n͙̠t̘̗̩̭͇̰͠i̴͚͔̳n̖͚͚͉g̷ ͖̤̯͖c͙̩̗͚͇͘ḩ͙̜͚̞̬a͍̙o͓̦͝s̺̟̯.̖͇̮͠'
+
+            -   label: Printers
+                icon:  folder-printers
+                error:
+                    message: Error loading COM32 interface. Contact your administrator.
+
+            -   label: Internal Tools
+                icon:  internet-options
+                error:
+                    message: Failed to load OCX interface.
+
+        fs:
+        -   label: "3½ Floppy (A:)"
+            icon:  drive-floppy
+            error:
+                message: Please insert a disk into drive A:...
+
+        -   label: "(C:)"
+            icon:  drive
+            side:  true
+            sub:
+            -   label: My Documents
+                sub:
+                -   label: My Pictures
+
+            -   label: Program Files
+                sub:
+                -   label: Accessories
+                    sub:
+                    -   label: CIS.SCP
+                    -   label: HyperTerminal
+                    -   label: MSPAINT.EXE
+                        icon:  mspaint
+                    -   label: PPPMENU.SCP
+                    -   label: SLIPMENU.SCP
+                    -   label: SLIP.SCP
+                    -   label: WORDPAD.EXE
+                        icon:  wordpad
+
+                -   label: Common Files
+                    error:
+                        message: Permission Denied
+                -   label: Internet Explorer
+                    error:
+                        message: Permission Denied
+                -   label: NetMeeting
+                    error:
+                        message: Permission Denied
+                -   label: Plus!
+                    error:
+                        message: Permission Denied
+                -   label: Windows Media Player
+                    error:
+                        message: Permission Denied
+                -   label: Uninstall Information
+                    error:
+                        message: Permission Denied
+
+            -   label: Windows
+                error:
+                    message: Permission Denied
+
+        -   label: "(D:)"
+            icon:  drive-cdrom
+            error:
+                message: Please insert a disk into drive D:...
+
+        -   label: "Printers"
+            icon:  folder-printers
+            error:
+                message: Error loading COM32 interface. Contact your administrator.
+
+        -   label: "Control Panel"
+            icon:  folder-control-panel
+            error:
+                message: 'T͟o̱̣͕̜͍ ̻͙̯̜̼̼̬i̛͈̙̗̭̖̘n͓̣̰̙̟͎v͇̰͍̥̩̻o̢̥̤̬k͉̝͕̼̦̟ḛ͉̟̰̞̦̱ ̶̫̖ͅt͍͎̹̥h͈̫͈͈̣͈e̢͓ ̺͙̭h͙̠̩̠͖̥͘i͔̤̗̲̰v̩̹̫̜̀e̕-m̮̻̞̺͟i͍̟̲͇̫̙nd͖͉͕͕͙̝ ͙͚̟̥̖̖͢ͅrè̗͕̮͎̲̯̝p̘r҉̮̮͚e̗͞s̻̖͜ͅe͏̭͖̹n͙̠t̘̗̩̭͇̰͠i̴͚͔̳n̖͚͚͉g̷ ͖̤̯͖c͙̩̗͚͇͘ḩ͙̜͚̞̬a͍̙o͓̦͝s̺̟̯.̖͇̮͠'
+
+        -   label: "Dial-Up Networking"
+            icon:  folder-dialup
+
+        -   label: "Scheduled Tasks"
+            icon:  folder-scheduled-tasks
+
+        -   label: "Recycle Bin"
+            icon:  recycle-bin
+            hide:  true
+            sub:   []
+
+        -   label: "Network Neighborhood"
+            icon:  network-neighborhood
+            hide:  true
+            sub:
+            -   label: Entire Network
+                icon:  globe
+                error:
+                    message: A problem was encountered with the network. Contact your administrator.

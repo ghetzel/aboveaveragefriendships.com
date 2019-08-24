@@ -1,0 +1,47 @@
+.pline {
+    $plc2k19base: #00cc00;
+    $plc2k19strp: 10px;
+
+    &.pline-comply {
+        background:  black;
+        background-repeat: no-repeat;
+        background:  linear-gradient(
+            to bottom,
+            $plc2k19base,
+            $plc2k19base              10px,
+            darken($plc2k19base, 5%)  10px,
+            darken($plc2k19base, 5%)  20px,
+            darken($plc2k19base, 10%) 20px,
+            darken($plc2k19base, 10%) 30px,
+            darken($plc2k19base, 15%) 30px,
+            darken($plc2k19base, 15%) 40px,
+            darken($plc2k19base, 20%) 40px,
+            darken($plc2k19base, 20%) 50px,
+            darken($plc2k19base, 25%) 50px,
+            darken($plc2k19base, 25%) 60px,
+            darken($plc2k19base, 30%) 60px,
+            darken($plc2k19base, 30%) 70px,
+            darken($plc2k19base, 35%) 70px,
+            darken($plc2k19base, 35%) 80px,
+            darken($plc2k19base, 40%) 80px,
+            darken($plc2k19base, 40%) 90px,
+            darken($plc2k19base, 45%) 90px,
+            darken($plc2k19base, 45%) 100px,
+            #000000                   100px,
+            #000000                   110px
+        );
+        color:       white;
+        font-family: 'Times New Roman', Times, serif;
+
+        a {
+            color: lighten($plc2k19base, 15%);
+        }
+    }
+
+}
+
+#pltarget table {
+    th, td {
+        padding: 3px;
+    }
+}

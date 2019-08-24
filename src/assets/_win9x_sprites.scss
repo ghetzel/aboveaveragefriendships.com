@@ -1,0 +1,66 @@
+.sprite.sprite-minimize { background-image: url('/assets/images/sprites/minimize-normal.gif'); }
+.sprite.sprite-search { background-image: url('/assets/images/sprites/search-normal.gif'); }
+*:hover > .sprite.sprite-delete { background-image: url('/assets/images/sprites/delete-active.gif'); }
+.sprite.sprite-state-active.sprite-delete { background-image: url('/assets/images/sprites/delete-active.gif'); }
+*:hover > .sprite.sprite-search { background-image: url('/assets/images/sprites/search-active.gif'); }
+.sprite.sprite-state-active.sprite-search { background-image: url('/assets/images/sprites/search-active.gif'); }
+.sprite.sprite-history { background-image: url('/assets/images/sprites/history-normal.gif'); }
+*:hover > .sprite.sprite-history { background-image: url('/assets/images/sprites/history-active.gif'); }
+.sprite.sprite-state-active.sprite-history { background-image: url('/assets/images/sprites/history-active.gif'); }
+*:hover > .sprite.sprite-cut { background-image: url('/assets/images/sprites/cut-active.gif'); }
+.sprite.sprite-state-active.sprite-cut { background-image: url('/assets/images/sprites/cut-active.gif'); }
+.sprite.sprite-properties { background-image: url('/assets/images/sprites/properties-normal.gif'); }
+.sprite.sprite-caret-down { background-image: url('/assets/images/sprites/caret-down-normal.gif'); }
+*:hover > .sprite.sprite-properties { background-image: url('/assets/images/sprites/properties-active.gif'); }
+.sprite.sprite-state-active.sprite-properties { background-image: url('/assets/images/sprites/properties-active.gif'); }
+.sprite.sprite-home { background-image: url('/assets/images/sprites/home-normal.gif'); }
+.sprite.sprite-stop { background-image: url('/assets/images/sprites/stop-normal.gif'); }
+*:hover > .sprite.sprite-refresh { background-image: url('/assets/images/sprites/refresh-active.gif'); }
+.sprite.sprite-state-active.sprite-refresh { background-image: url('/assets/images/sprites/refresh-active.gif'); }
+*:hover > .sprite.sprite-home { background-image: url('/assets/images/sprites/home-active.gif'); }
+.sprite.sprite-state-active.sprite-home { background-image: url('/assets/images/sprites/home-active.gif'); }
+*:hover > .sprite.sprite-stop { background-image: url('/assets/images/sprites/stop-active.gif'); }
+.sprite.sprite-state-active.sprite-stop { background-image: url('/assets/images/sprites/stop-active.gif'); }
+.sprite.sprite-maximize { background-image: url('/assets/images/sprites/maximize-normal.gif'); }
+.sprite.sprite-paste { background-image: url('/assets/images/sprites/paste-normal.gif'); }
+.sprite.sprite-restore { background-image: url('/assets/images/sprites/restore-normal.gif'); }
+*:hover > .sprite.sprite-print { background-image: url('/assets/images/sprites/print-active.gif'); }
+.sprite.sprite-state-active.sprite-print { background-image: url('/assets/images/sprites/print-active.gif'); }
+.sprite.sprite-refresh { background-image: url('/assets/images/sprites/refresh-normal.gif'); }
+.sprite.sprite-state-disabled.sprite-forward { background-image: url('/assets/images/sprites/forward-disabled.gif'); }
+.sprite.sprite-state-disabled.sprite-back { background-image: url('/assets/images/sprites/back-disabled.gif'); }
+.sprite.sprite-go { background-image: url('/assets/images/sprites/go-normal.gif'); }
+.sprite.sprite-print { background-image: url('/assets/images/sprites/print-normal.gif'); }
+*:hover > .sprite.sprite-go { background-image: url('/assets/images/sprites/go-active.gif'); }
+.sprite.sprite-state-active.sprite-go { background-image: url('/assets/images/sprites/go-active.gif'); }
+*:hover > .sprite.sprite-paste { background-image: url('/assets/images/sprites/paste-active.gif'); }
+.sprite.sprite-state-active.sprite-paste { background-image: url('/assets/images/sprites/paste-active.gif'); }
+.sprite.sprite-up { background-image: url('/assets/images/sprites/up-normal.gif'); }
+*:hover > .sprite.sprite-up { background-image: url('/assets/images/sprites/up-active.gif'); }
+.sprite.sprite-state-active.sprite-up { background-image: url('/assets/images/sprites/up-active.gif'); }
+.sprite.sprite-copy { background-image: url('/assets/images/sprites/copy-normal.gif'); }
+*:hover > .sprite.sprite-copy { background-image: url('/assets/images/sprites/copy-active.gif'); }
+.sprite.sprite-state-active.sprite-copy { background-image: url('/assets/images/sprites/copy-active.gif'); }
+.sprite.sprite-state-disabled.sprite-caret-down { background-image: url('/assets/images/sprites/caret-down-disabled.gif'); }
+*:hover > .sprite.sprite-favorites { background-image: url('/assets/images/sprites/favorites-active.gif'); }
+.sprite.sprite-state-active.sprite-favorites { background-image: url('/assets/images/sprites/favorites-active.gif'); }
+.sprite.sprite-undo { background-image: url('/assets/images/sprites/undo-normal.gif'); }
+.sprite.sprite-favorites { background-image: url('/assets/images/sprites/favorites-normal.gif'); }
+.sprite.sprite-close { background-image: url('/assets/images/sprites/close-normal.gif'); }
+*:hover > .sprite.sprite-undo { background-image: url('/assets/images/sprites/undo-active.gif'); }
+.sprite.sprite-state-active.sprite-undo { background-image: url('/assets/images/sprites/undo-active.gif'); }
+.sprite.sprite-mail { background-image: url('/assets/images/sprites/mail-normal.gif'); }
+.sprite.sprite-views { background-image: url('/assets/images/sprites/views-normal.gif'); }
+*:hover > .sprite.sprite-mail { background-image: url('/assets/images/sprites/mail-active.gif'); }
+.sprite.sprite-state-active.sprite-mail { background-image: url('/assets/images/sprites/mail-active.gif'); }
+*:hover > .sprite.sprite-views { background-image: url('/assets/images/sprites/views-active.gif'); }
+.sprite.sprite-state-active.sprite-views { background-image: url('/assets/images/sprites/views-active.gif'); }
+.sprite.sprite-delete { background-image: url('/assets/images/sprites/delete-normal.gif'); }
+.sprite.sprite-forward { background-image: url('/assets/images/sprites/forward-normal.gif'); }
+.sprite.sprite-back { background-image: url('/assets/images/sprites/back-normal.gif'); }
+*:hover > .sprite.sprite-forward { background-image: url('/assets/images/sprites/forward-active.gif'); }
+.sprite.sprite-state-active.sprite-forward { background-image: url('/assets/images/sprites/forward-active.gif'); }
+*:hover > .sprite.sprite-back { background-image: url('/assets/images/sprites/back-active.gif'); }
+.sprite.sprite-state-active.sprite-back { background-image: url('/assets/images/sprites/back-active.gif'); }
+.sprite.sprite-cut { background-image: url('/assets/images/sprites/cut-normal.gif'); }
+.sprite.sprite-zone-internet { background-image: url('/assets/images/sprites/zone-internet-normal.gif'); }

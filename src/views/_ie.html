@@ -1,0 +1,116 @@
+{{ $url := qs "url" "https://www.google.com" }}
+<div class="w9x-menubar pure-menu pure-menu-horizontal">
+    <div class="w9x-toolbar-handle"></div>
+    <ul class="pure-menu-list">
+        <li class="pure-menu-item">
+            <a class="pure-menu-link"><u>F</u>ile</a>
+        </li>
+
+        <li class="pure-menu-item">
+            <a class="pure-menu-link"><u>E</u>dit</a>
+        </li>
+
+        <li class="pure-menu-item">
+            <a class="pure-menu-link"><u>V</u>iew</a>
+        </li>
+
+        <li class="pure-menu-item">
+            <a class="pure-menu-link">F<u>a</u>vorites</a>
+        </li>
+
+        <li class="pure-menu-item">
+            <a class="pure-menu-link"><u>T</u>ools</a>
+        </li>
+
+        <li class="pure-menu-item">
+            <a class="pure-menu-link"><u>H</u>elp</a>
+        </li>
+    </ul>
+</div>
+
+<div class="w9x-toolbar">
+    <div class="w9x-toolbar-handle"></div>
+    <a class="btn" data-webview-action="back">
+        <i class="sprite sprite-back"></i>
+        Back
+    </a>
+
+    <a class="btn" data-webview-action="forward">
+        <i class="sprite sprite-forward"></i>
+        Forward
+    </a>
+
+    <a class="btn" data-webview-action="stop">
+        <i class="sprite sprite-stop"></i>
+        Stop
+    </a>
+
+    <a class="btn" data-webview-action="refresh">
+        <i class="sprite sprite-refresh"></i>
+        Refresh
+    </a>
+
+    <a class="btn" data-webview-action="home">
+        <i class="sprite sprite-home"></i>
+        Home
+    </a>
+
+    <hr />
+
+    <a class="btn">
+        <i class="sprite sprite-search"></i>
+        Search
+    </a>
+
+    <a class="btn">
+        <i class="sprite sprite-favorites"></i>
+        Favorites
+    </a>
+
+    <a class="btn">
+        <i class="sprite sprite-history"></i>
+        History
+    </a>
+
+    <hr />
+
+    <a class="btn">
+        <i class="sprite sprite-mail"></i>
+        Mail
+    </a>
+
+    <a class="btn">
+        <i class="sprite sprite-print"></i>
+        Print
+    </a>
+</div>
+
+<div class="w9x-addressbar">
+    <div class="w9x-toolbar-handle"></div>
+    <span>A<u>d</u>dress</span>
+    <input type="text" value="{{ $url }}" class="allow-select">
+    <!--
+    <a>
+        <i class="sprite sprite-go"></i>
+        Go
+    </a>
+    -->
+</div>
+
+<!--
+<div class="w9x-linksbar">
+    <div class="w9x-toolbar-handle"></div>
+    <span>Links</span>
+    <a href="/views/_ie?url=https://google.com">
+        <i class="sprite sprite-go"></i>
+        MSN
+    </a>
+</div>
+-->
+
+<iframe
+    class="w9x-content-main w9x-webview"
+    sandbox="allow-forms allow-same-origin allow-scripts"
+    src="{{ $url }}"
+>
+</iframe>
