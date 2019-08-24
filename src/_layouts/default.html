@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+
+    <title>{{ or $.page.title "Above-Average Friendships, LLC" }}</title>
+    <style>
+        body {
+            margin:  0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        header {
+            height:     74px;
+            position:   relative;
+            color:      #7F94FF;
+        }
+
+        header > .header-1 {
+            background: transparent top left repeat-x url('/assets/img/header_03.png');
+            position:   absolute;
+            top:        -46px;
+            left:       0;
+            right:      0;
+            height:     76px;
+            z-index:    100;
+        }
+
+        header > .header-2 {
+            background: transparent top left no-repeat url('/assets/img/header_04.png');
+            position:   absolute;
+            top:        0;
+            left:       0;
+            right:      0;
+            height:     30px;
+            z-index:    100;
+        }
+
+        header > .header-3 {
+            background: transparent top left no-repeat url('/assets/img/header_05.png');
+            position:   absolute;
+            top:        30px;
+            left:       0;
+            right:      0;
+            height:     44px;
+            z-index:    100;
+        }
+
+        header > .title {
+            position:   absolute;
+            top:        0;
+            left:       340px;
+            right:      0;
+            height:     30px;
+            z-index:    1000;
+            margin-top: 6px;
+        }
+
+        header > .title > h1 {
+            margin-bottom: 0px;
+            color:         #3f4a7f;
+        }
+
+        header > .title > h2 {
+            margin-top: 0px;
+        }
+
+        body > nav {
+            position: absolute;
+            top:      96px;
+            left:     0;
+            bottom:   0;
+            width:    340px;
+        }
+
+        nav ul {
+            padding: 0;
+        }
+
+        nav ul > li {
+            background:      #7FDCFF;
+            list-style-type: none;
+            height:          32px;
+            border-bottom:   2px solid #7F94FF;
+            padding:         8px;
+            padding-top:     16px;
+            padding-bottom:  0px;
+        }
+
+        nav ul > li a {
+            text-decoration: none;
+            color:           #3f4a7f;
+            font-size:       18px;
+            font-weight:     bold;
+        }
+
+        nav ul > li:hover {
+            background:      #3f4a7f;
+        }
+
+        nav ul > li:hover a {
+            color:           white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-1">&nbsp;</div>
+        <div class="header-2">&nbsp;</div>
+        <div class="header-3">&nbsp;</div>
+        <div class="title">
+            <h1>Above-Average Friendships</h1>
+            <h2>Web Design, Consulting, &amp; Custom Programming</h2>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/services.html">Services</a></li>
+            <li><a href="/internet.html">Internet Access</a></li>
+            <li><a href="/about.html">About Us</a></li>
+        </ul>
+    </nav>
+
+	{{ template "content" . }}
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+    html, body, img {
+        background: transparent;
+        width:      100vw;
+        height:     100vh;
+        padding:    0;
+        margin:     0;
+        overflow:   hidden;
+        object-fit: contain;
+    }
+
+    body:before {
+        content:        "";
+        position:       fixed;
+        top:            -5vh;
+        left:           -5vw;
+        z-index:        -1;
+        display:        block;
+        background:     url('/assets/img/no-need.jpg');
+        width:          110vw;
+        height:         110vh;
+        -webkit-filter: blur(10px);
+        -moz-filter:    blur(10px);
+        -o-filter:      blur(10px);
+        -ms-filter:     blur(10px);
+        filter:         blur(10px);
+    }
+    </style>
+    <title>No need.</title>
+</head>
+<body>
+    <img src="/assets/img/no-need.jpg">
+</body>
+</html>
