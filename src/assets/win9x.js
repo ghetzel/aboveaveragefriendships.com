@@ -276,7 +276,7 @@ $(function(){
                     a.closest('.w9x-window').find('.w9x-webview').get(0).src = a.closest('.w9x-window').find('.w9x-webview').get(0).src;
                     break;
                 case 'home':
-                    a.closest('.w9x-window').find('.w9x-webview').get(0).contentWindow.location.href = 'https://gary.cool/comply.html';
+                    a.closest('.w9x-window').find('.w9x-webview').get(0).src = 'https://aboveaveragefriendships.com/cgi-bin/index.html';
                     break;
                 }
             } else if (a.attr('data-target')) {
