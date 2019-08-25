@@ -273,7 +273,7 @@ $(function(){
                     a.closest('.w9x-window').find('.w9x-webview').get(0).contentWindow.stop();
                     break;
                 case 'refresh':
-                    a.closest('.w9x-window').find('.w9x-webview').get(0).contentWindow.location.reload();
+                    a.closest('.w9x-window').find('.w9x-webview').get(0).src = a.closest('.w9x-window').find('.w9x-webview').get(0).src;
                     break;
                 case 'home':
                     a.closest('.w9x-window').find('.w9x-webview').get(0).contentWindow.location.href = 'https://gary.cool/comply.html';
