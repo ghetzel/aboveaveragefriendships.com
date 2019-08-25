@@ -381,7 +381,7 @@ $(function(){
 
     $('#desktop').focus();
 
-    window.app.newWindow('/views/_ie.html?url=https://aboveaveragefriendships.com/main.html', {
+    window.app.newWindow('/views/_ie.html?url=https://aboveaveragefriendships.com/cgi-bin/index.html', {
         title: 'Above-Average Friendships, LLC - Microsoft Internet Explorer',
     });
 
