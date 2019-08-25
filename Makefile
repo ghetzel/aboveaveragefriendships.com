@@ -11,7 +11,10 @@ css:
 	cd src/assets/images/sprites && make --silent css > ../../_win9x_sprites.scss
 	cd src/assets/images/icons && make --silent css > ../../_win9x_icons.scss
 
-assets: css
+compress:
+	cd src/assets/images/people && make
+
+assets: css compress
 
 run:
 	diecast -L debug -a :28419

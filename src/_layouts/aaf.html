@@ -59,40 +59,40 @@
             margin-top: 6px;
         }
 
-        header > .title > h1 {
+        header > .title h1 {
             margin-bottom: 0px;
             color:         #3f4a7f;
         }
 
-        header > .title > h2 {
+        header > .title h2 {
             margin-top: 0px;
         }
 
-        body > nav {
-            position: absolute;
-            top:      96px;
-            left:     0;
-            bottom:   0;
-            width:    325px;
+        #main {
+            margin-top:      44px;
+            display:         flex;
+            justify-content: stretch;
+            clear:           both;
         }
 
-        #content {
-            position: absolute;
-            top:      96px;
-            left:     340px;
-            bottom:   0px;
-            right:    15px;
+        #main > nav {
+            flex:         1;
+            margin-right: 15px;
         }
 
-        #content a {
+        #main > #content {
+            flex:     4;
+        }
+
+        #main > #content a {
             color:    #0D2A62;
         }
 
-        #content table {
+        #main > #content table {
             width: 100%;
         }
 
-        #content th {
+        #main > #content th {
             color:      white;
             background: #0A2357 center center repeat-x url('/assets/images/01.gif');
             padding:    8px;
@@ -100,17 +100,17 @@
             text-align: left;
         }
 
-        #content td {
+        #main > #content td {
             padding: 0 !important;
             margin: 0 !important;
 
         }
 
-        #content td ul {
+        #main > #content td ul {
             margin: 0;
         }
 
-        #content td ul > li {
+        #main > #content td ul > li {
             list-style:   url('/assets/images/bullet-0.gif');
             padding-left: 8px;
             font-size:    14px;
@@ -123,11 +123,8 @@
         nav ul > li {
             background:      #7FDCFF;
             list-style-type: none;
-            height:          32px;
             border-bottom:   2px solid #7F94FF;
-            padding:         8px;
-            padding-top:     16px;
-            padding-bottom:  0px;
+            padding:         0;
         }
 
         nav ul > li a {
@@ -135,6 +132,12 @@
             color:           #3f4a7f;
             font-size:       18px;
             font-weight:     bold;
+            display:         inline-block;
+            width:           100%;
+            height:          32px;
+            padding:         8px;
+            padding-top:     16px;
+            padding-bottom:  0px;
         }
 
         nav ul > li:hover {
@@ -144,6 +147,15 @@
         nav ul > li:hover a {
             color:           white;
         }
+
+        footer {
+            display:    block;
+            width:      100%;
+            text-align: center;
+            margin-top: 40px;
+            color:      #AAA;
+            font-size:  small;
+        }
     </style>
 </head>
 <body>
@@ -152,22 +164,42 @@
         <div class="header-2">&nbsp;</div>
         <div class="header-3">&nbsp;</div>
         <div class="title">
-            <h1>Above-Average Friendships</h1>
-            <h2>Web Design, Consulting, &amp; Custom Programming</h2>
+            <div style="float: left; width: 50%">
+                <h1>Above-Average Friendships</h1>
+                <h2>Web Design &amp; Computer Consulting</h2>
+            </div>
+
+            <div style="
+                float:        right;
+                width:        calc(50% - 20px);
+                text-align:   right;
+                margin-top:   10px;
+                margin-right: 10px;
+            ">
+                <h4 style="color: #3f4a7f;">Call Us TODAY! (610) 550-8798</h4>
+                <h4>E-Mail us at <a href="mailto:questions@aboveaveragefriendships.com">questions@aboveaveragefriendships.com</a></h4>
+            </div>
         </div>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="/cgi-bin/index.html">Home</a></li>
-            <li><a href="/cgi-bin/services.html">Services</a></li>
-            <li><a href="/cgi-bin/internet.html">Internet Access</a></li>
-            <li><a href="/cgi-bin/about.html">About Us</a></li>
-        </ul>
-    </nav>
+    <div id="main">
+        <nav>
+            <ul>
+                <li><a href="/cgi-bin/index.html">Home</a></li>
+                <li><a href="/cgi-bin/services.html">Services</a></li>
+                <li><a href="/cgi-bin/about.html">About Us</a></li>
+            </ul>
+        </nav>
 
-    <section id="content">
-        {{ template "content" . }}
-    </section>
+        <section id="content">
+            {{ template "content" . }}
+        </section>
+    </div>
+
+    <footer>
+        This website is protected by U.S. copyright law.
+        (c) 2001 Above-Average Friendships, LLC.
+        All rights reserved.
+    </footer>
 </body>
 </html>
