@@ -112,15 +112,10 @@ header:
                 icon:    start-shutdown
 
             programs:
-            -   label: Web Design Services
-                icon:  globe
-                title: Custom Web Design for your product or homepage.
-                href:  /views/_web_design.html
-
             -   label: Internet Explorer
                 icon:  internet-explorer
                 title: Microsoft Internet Explorer
-                href:  '/views/_ie.html?url=https://aboveaveragefriendships.com/main.html'
+                href:  '/views/_ie.html?url=https://aboveaveragefriendships.com/cgi-bin/index.html'
 
             settings:
             -   label: Control Panel
