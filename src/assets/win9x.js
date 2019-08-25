@@ -3,6 +3,7 @@
 window.app = {};
 
 $(function(){
+    try {
     // if (!$.cookie('windows98startup')) {
     //     $.cookie('windows98startup', true);
         new buzz.sound('/assets/sounds/the-microsoft-sound', {
@@ -15,6 +16,7 @@ $(function(){
     //         formats: [ 'ogg', 'mp3', 'aac' ]
     //     }).play();
     // }
+    } catch (e) { ; }
 
     var cascadeOffsetX = 20;
     var cascadeOffsetY = 20;

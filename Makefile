@@ -3,7 +3,7 @@
 
 GO111MODULE ?= on
 
-all: run
+all: assets run
 
 css:
 	truncate -s0 src/assets/_win9x_sprites.scss
@@ -13,7 +13,7 @@ css:
 
 assets: css
 
-run: assets
+run:
 	diecast -L debug -a :28419
 
 pass:

@@ -39,19 +39,38 @@ $explorerSidebarW: 33%;
 
 @font-face {
     font-family: mssans;
+    font-weight: normal;
+    font-style:  normal;
     src:
-        url('/assets/fonts/MicrosoftSansSerif.woff'),
         url('/assets/fonts/MicrosoftSansSerif.eot'),
-        url('/assets/fonts/MicrosoftSansSerif.svg');
+        url('/assets/fonts/MicrosoftSansSerif.eot?#iefix') format('eot'),
+        url('/assets/fonts/MicrosoftSansSerif.woff') format('woff'),
+        url('/assets/fonts/MicrosoftSansSerif.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: mssans;
+        src:         url('/assets/fonts/MicrosoftSansSerif.svg') format('svg');
+    }
 }
 
 @font-face {
     font-family: mssans;
     font-weight: bold;
     src:
-        url('/assets/fonts/MicrosoftSansSerifBold.woff'),
         url('/assets/fonts/MicrosoftSansSerifBold.eot'),
-        url('/assets/fonts/MicrosoftSansSerifBold.svg');
+        url('/assets/fonts/MicrosoftSansSerifBold.eot?#iefix') format('eot'),
+        url('/assets/fonts/MicrosoftSansSerifBold.woff') format('woff'),
+        url('/assets/fonts/MicrosoftSansSerifBold.svg') format('svg');
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: mssans;
+        font-weight: bold;
+        src:         url('/assets/fonts/MicrosoftSansSerifBold.svg') format('svg');
+    }
 }
 
 .ui-widget-content {
@@ -201,14 +220,17 @@ html {
     font-size:               11px;
     overflow:                hidden;
 
+    * {
+        font-smooth:             never !important;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing:  none;
+    }
+
     body {
         margin:                  0;
         padding:                 0;
         background:              $desktop;
         overflow:                hidden;
-        font-smooth:             never !important;
-        -moz-osx-font-smoothing: grayscale;
-        -webkit-font-smoothing:  none;
 
         #desktop {
             background:  transparent;

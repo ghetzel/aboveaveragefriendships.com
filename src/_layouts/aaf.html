@@ -7,9 +7,10 @@
     <title>{{ or $.page.title "Above-Average Friendships, LLC" }}</title>
     <style>
         body {
-            margin:  0;
-            padding: 0;
+            margin:      0;
+            padding:     0;
             font-family: 'Arial', sans-serif;
+            color:       #3F4A7F;
         }
 
         header {
@@ -72,7 +73,47 @@
             top:      96px;
             left:     0;
             bottom:   0;
-            width:    340px;
+            width:    325px;
+        }
+
+        #content {
+            position: absolute;
+            top:      96px;
+            left:     340px;
+            bottom:   0px;
+            right:    15px;
+        }
+
+        #content a {
+            color:    #0D2A62;
+        }
+
+        #content table {
+            width: 100%;
+        }
+
+        #content th {
+            color:      white;
+            background: #0A2357 center center repeat-x url('/assets/images/01.gif');
+            padding:    8px;
+            font-size:  24px;
+            text-align: left;
+        }
+
+        #content td {
+            padding: 0 !important;
+            margin: 0 !important;
+
+        }
+
+        #content td ul {
+            margin: 0;
+        }
+
+        #content td ul > li {
+            list-style:   url('/assets/images/bullet-0.gif');
+            padding-left: 8px;
+            font-size:    14px;
         }
 
         nav ul {
@@ -118,13 +159,15 @@
 
     <nav>
         <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/services.html">Services</a></li>
-            <li><a href="/internet.html">Internet Access</a></li>
-            <li><a href="/about.html">About Us</a></li>
+            <li><a href="/cgi-bin/index.html">Home</a></li>
+            <li><a href="/cgi-bin/services.html">Services</a></li>
+            <li><a href="/cgi-bin/internet.html">Internet Access</a></li>
+            <li><a href="/cgi-bin/about.html">About Us</a></li>
         </ul>
     </nav>
 
-	{{ template "content" . }}
+    <section id="content">
+        {{ template "content" . }}
+    </section>
 </body>
 </html>
