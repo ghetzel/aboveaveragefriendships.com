@@ -176,6 +176,10 @@ $(function(){
                 );
             }
 
+            if (config.maximize) {
+                win.addClass('state-maximized');
+            }
+
             act.append(
                 $('<a></a>').addClass('btn btn-close').on('click', function(e){
                     $(win).remove();
@@ -382,7 +386,8 @@ $(function(){
     $('#desktop').focus();
 
     window.app.newWindow('/views/_ie.html?url=https://aboveaveragefriendships.com/cgi-bin/index.html', {
-        title: 'Above-Average Friendships, LLC - Microsoft Internet Explorer',
+        title:    'Above-Average Friendships, LLC - Microsoft Internet Explorer',
+        maximize: true,
     });
 
     // window.app.error('Error', "An error has occurred and there's nothing you can do about it.");
