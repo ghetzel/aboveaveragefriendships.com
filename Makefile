@@ -2,6 +2,7 @@
 .EXPORT_ALL_VARIABLES:
 
 GO111MODULE ?= on
+CONTAINER   ?= ghetzel/aboveaveragefriendships.com:latest
 
 all: assets run
 
@@ -21,3 +22,7 @@ run:
 
 pass:
 	htpasswd -nBC 10 $(USER)
+
+docker:
+	docker build -t $(CONTAINER) .
+	docker push $(CONTAINER)
